@@ -22,7 +22,7 @@ MakeAWiki is a flexible markdown-based wiki system built with Node.js, Express, 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/MakeAWiki.git
+git clone https://github.com/crizmo/MakeAWiki.git
 cd MakeAWiki
 ```
 
@@ -55,42 +55,10 @@ This project is configured with automated deployment via GitHub Actions and Verc
 2. Sign up for a Vercel account: https://vercel.com/signup
 3. Import your repository from GitHub
 4. Configure the following settings:
-   - Framework Preset: `Node.js`
-   - Build Command: `npm install`
-   - Output Directory: `./`
+   - Build Command: `npm run build`
+   - Output Directory: `.`
    - Install Command: `npm install`
-5. Set up GitHub repository secrets:
-   - `VERCEL_TOKEN`: Your Vercel API token
 6. Deploy!
-
-### Automated Updates
-
-The wiki is configured with GitHub Actions workflows that:
-
-1. Automatically deploy to Vercel when changes are pushed to the main branch
-2. Verify the project structure to ensure all necessary directories exist
-
-To test the update scripts locally:
-
-```bash
-# Make the setup script executable
-chmod +x setup-deployment.sh
-
-# Run the setup script
-./setup-deployment.sh
-```
-
-### Manual Updates
-
-You can also manually verify the project structure:
-
-```bash
-# Make the setup script executable
-chmod +x setup-deployment.sh
-
-# Run the setup script
-./setup-deployment.sh
-```
 
 ## License
 
