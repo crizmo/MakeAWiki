@@ -65,7 +65,7 @@ On the project configuration screen:
 1. Project Name: Enter a name for your project (this will be part of your deployment URL)
 2. Framework Preset: Select "Other" or "Node.js"
 3. Root Directory: Leave as default if your MakeAWiki is in the repository root
-4. Build and Output Settings: The `vercel.json` file should handle this automatically
+4. Build and Output Settings: Build to - `npm run build` and Output Directory - `.` 
 
 ### 5. Deploy
 
