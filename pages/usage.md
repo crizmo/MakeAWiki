@@ -85,7 +85,7 @@ If you need help with MakeAWiki, check out these resources:
 
 - [Support Page](/support) - Common issues and solutions
 - [Customization Guide](/customization) - Detailed customization options
-- [GitHub Issues](https://github.com/yourusername/MakeAWiki/issues) - Report bugs or request features
+- [GitHub Issues](https://github.com/crizmo/MakeAWiki/issues) - Report bugs or request features
 
 ### Keyboard Shortcuts
 

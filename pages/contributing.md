@@ -19,7 +19,7 @@ To set up a development environment for MakeAWiki:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MakeAWiki.git
+   git clone https://github.com/crizmo/MakeAWiki.git
    cd MakeAWiki
    ```
 

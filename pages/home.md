@@ -32,7 +32,7 @@ MakeAWiki is a flexible markdown-based wiki system that allows anyone to create 
 ## Quick Installation
 
 ```bash
-git clone https://github.com/yourusername/MakeAWiki.git
+git clone https://github.com/crizmo/MakeAWiki.git
 cd MakeAWiki
 npm install
 npm start

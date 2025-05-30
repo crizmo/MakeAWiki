@@ -15,7 +15,7 @@ Before installing MakeAWiki, make sure you have the following:
 1. Clone the MakeAWiki repository:
 
 ```bash
-git clone https://github.com/yourusername/MakeAWiki.git
+git clone https://github.com/crizmo/MakeAWiki.git
 cd MakeAWiki
 ```
 

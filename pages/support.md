@@ -25,7 +25,7 @@ Need help with MakeAWiki? You've come to the right place. This page provides res
 
 If you can't find a solution to your problem, there are several ways to get help:
 
-**GitHub Issues**: Submit a detailed bug report on our [GitHub Issues page](https://github.com/yourusername/MakeAWiki/issues)
+**GitHub Issues**: Submit a detailed bug report on our [GitHub Issues page](https://github.com/crizmo/MakeAWiki/issues)
 
 When reporting issues, please include:
 
@@ -47,8 +47,8 @@ Our documentation is the best place to start for many questions:
 
 ### Community Resources
 
-- [MakeAWiki GitHub](https://github.com/yourusername/MakeAWiki)
-- [MakeAWiki Discussions](https://github.com/yourusername/MakeAWiki/discussions)
+- [MakeAWiki GitHub](https://github.com/crizmo/MakeAWiki)
+- [MakeAWiki Discussions](https://github.com/crizmo/MakeAWiki/discussions)
 
 ### Contributing to Support
 
