@@ -1,36 +1,36 @@
-## KPM Support
+## MakeAWiki Support
 
-Need help with KPM? You've come to the right place. This page provides resources for getting support with KPM installation, configuration, and usage.
+Need help with MakeAWiki? You've come to the right place. This page provides resources for getting support with MakeAWiki installation, configuration, and usage.
 
 ### Common Issues and Solutions
 
 #### Installation Problems
 
-- **Installation script fails to download**: Check your network connection and make sure your Kindle can access GitHub
-- **Permission denied errors**: Make sure you're running the install script with appropriate permissions
-- **"Command not found" after installation**: Ensure that KPM's installation directory is in your PATH
+- **Node.js compatibility issues**: Make sure you're using Node.js version 12 or higher
+- **Dependency installation errors**: Try deleting the node_modules folder and running `npm install` again
+- **Port already in use**: Change the port in the index.js file if 3000 is already being used
 
-#### Package Management Issues
+#### Content Management Issues
 
-- **Unable to find packages**: Run `kpm update` to refresh your package lists
-- **Package installation fails**: Check for error messages that might indicate the cause, such as dependency issues or network problems
-- **Package works incorrectly**: Contact the package maintainer or check the package's documentation
+- **Markdown not rendering correctly**: Make sure your markdown syntax is correct
+- **Images not displaying**: Check that image paths are correct and files exist in the static directory
+- **Links not working**: Verify that your page paths are correct and the target pages exist
 
 #### Configuration Issues
 
-- **Repository connection errors**: Verify that the repository URL is correct and accessible
-- **Custom repository not recognized**: Check your repository configuration in `/etc/sources.list`
+- **Customization not taking effect**: Make sure to restart the server after making changes to templates or CSS
+- **Search not finding content**: The search is case-insensitive but requires exact matches for words
 
 ### Contact Support
 
 If you can't find a solution to your problem, there are several ways to get help:
 
-**GitHub Issues**: Submit a detailed bug report on our [GitHub Issues page](https://github.com/gingrspacecadet/issues)
+**GitHub Issues**: Submit a detailed bug report on our [GitHub Issues page](https://github.com/yourusername/MakeAWiki/issues)
 
 When reporting issues, please include:
 
-- KPM version (`kpm --version`)
-- Kindle model and firmware version
+- Node.js version
+- Browser and operating system
 - Detailed description of the problem
 - Steps to reproduce the issue
 - Any error messages or logs
@@ -41,21 +41,21 @@ Our documentation is the best place to start for many questions:
 
 - [Installation Guide](/installation)
 - [Basic Usage](/usage)
-- [Advanced Features](/advanced)
-- [FAQ](/faq)
+- [Customization](/customization)
+- [Markdown Basics](/guides/markdown-basics)
+- [Organizing Content](/guides/organizing-content)
 
 ### Community Resources
 
-- [KPM Wiki](https://kpmwiki.org) (community-maintained)
-- [MobileRead Forums](https://www.mobileread.com/forums/forumdisplay.php?f=150)
-- [r/kindlejailbreak](https://www.reddit.com/r/kindlejailbreak/) on Reddit
+- [MakeAWiki GitHub](https://github.com/yourusername/MakeAWiki)
+- [MakeAWiki Discussions](https://github.com/yourusername/MakeAWiki/discussions)
 
 ### Contributing to Support
 
 If you've solved a problem that others might encounter, consider:
 
-1. Adding it to our [FAQ](/faq)
-2. Creating a tutorial in the [Tutorials](/tutorials) section
+1. Contributing to our documentation
+2. Creating a guide in the [Guides](/guides) section
 3. Helping other users in our community channels
 
-Your contributions help make KPM better for everyone.
+Your contributions help make MakeAWiki better for everyone.

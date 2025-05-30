@@ -1,79 +1,75 @@
-## Installing KPM
+## Installing MakeAWiki
 
-This guide will walk you through the process of installing KPM on your Kindle device.
+This guide will walk you through the process of installing MakeAWiki on your server.
 
 ### Prerequisites
 
-Before installing KPM, make sure you have the following:
+Before installing MakeAWiki, make sure you have the following:
 
-- **Jailbroken Kindle**: KPM requires a jailbroken Kindle device
-- **KTerm**: Terminal emulator for Kindle
-- **wget**: For downloading files (usually comes pre-installed with KTerm)
-- **unzip** and/or **tar**: For extracting packages
+- **Node.js**: Version 12 or higher
+- **npm** or **yarn**: Package manager for Node.js
+- **Git**: For cloning the repository (optional)
 
 ### Installation Steps
 
-1. Open KTerm on your Kindle device
-2. Run the following commands:
+1. Clone the MakeAWiki repository:
 
 ```bash
-wget https://raw.githubusercontent.com/gingrspacecadet/kpm/main/install-kpm.sh
-chmod +x install-kpm.sh
-./install-kpm.sh
+git clone https://github.com/yourusername/MakeAWiki.git
+cd MakeAWiki
 ```
 
-3. The installation script will download the latest version of KPM and set it up on your device
-4. Once the installation is complete, you can verify it by running:
+2. Install dependencies:
 
 ```bash
-kpm --version
+npm install
 ```
 
-### What the Installation Script Does
+3. Start the server:
 
-The installation script performs the following tasks:
+```bash
+node index.js
+```
 
-1. Makes the root filesystem writable (`mntroot rw`)
-2. Creates necessary directories
-3. Downloads the KPM binary to `/usr/local/bin/kpm`
-4. Sets up the package list at `/mnt/us/kpm/package_list.conf`
-5. Creates configuration files in `/etc/kpm/`
-6. Creates the package directory at `/mnt/us/kpm/packages/`
-7. Adds KPM's bin directory to your PATH
+4. Open your browser and visit `http://localhost:3000` to access your wiki.
 
-### Directory Structure
+### Creating Your First Content
 
-After installation, KPM will create the following directory structure:
+1. Create markdown files in the `pages` directory
+2. Organize files in subdirectories to create a folder structure
+3. The homepage is `pages/home.md` (this is what visitors will see first)
+4. Files are accessible via their path, e.g., `pages/folder/page.md` is accessible at `/folder/page`
+
+### Project Structure
+
+After installation, your MakeAWiki project will have the following structure:
 
 ```
-/usr/local/bin/kpm               # KPM binary
-/etc/kpm/                        # Configuration files
-├── kpm.conf                     # Main configuration
-└── kpm_mirrors.conf             # Mirror URLs
-/mnt/us/kpm/                     # KPM data directory
-├── package_list.conf            # List of installed packages
-└── packages/                    # Packages directory
-    └── bin/                     # Binaries from packages
+MakeAWiki/
+  ├── index.js              # Main application file
+  ├── package.json          # Package configuration
+  ├── views/                # EJS templates
+  ├── static/               # CSS, JavaScript, and other static files
+  └── pages/                # Your wiki content (markdown files)
 ```
 
 ### Troubleshooting
 
 If you encounter any issues during installation:
 
-- Make sure your Kindle is connected to the internet
-- Verify that `wget` and `curl` are properly installed (should come with KTerm)
-- Check if you have sufficient storage space (at least 5MB free)
-- Make sure you're running the installation script as root
-- Ensure the root filesystem is mounted as read-write (`mntroot rw`)
+- Make sure your computer is connected to the internet
+- Verify that Node.js and npm are properly installed
+- Check if you have sufficient storage space (at least 50MB free)
+- Check for errors in the terminal output
+- Make sure all dependencies are being installed correctly
 
 Common issues:
 
-1. **"Permission denied" errors**:
-   - Run `mntroot rw` before installation to make the filesystem writable
-   - Make sure you're running the script as root
+1. **"Port already in use" error**:
+   - Change the port in the index.js file if port 3000 is already being used
+   - Or stop the process using that port and restart
 
-2. **"Command not found" after installation**:
-   - Try restarting KTerm or logging out and back in
-   - Check if `/mnt/us/kpm/packages/bin` is in your PATH
+2. **Module not found errors**:
+   - Try deleting node_modules folder and running `npm install` again
 
 If you continue to have problems, please visit our [Support](/support) page for additional help.

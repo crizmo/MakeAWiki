@@ -1,32 +1,39 @@
-## Introduction to KPM
+## Introduction to MakeAWiki
 
-KPM (Kindle Package Manager) is a package manager specifically designed for Amazon Kindle devices. It provides a simple and efficient way to install, update, and manage software packages on your jailbroken Kindle device.
+MakeAWiki is a flexible markdown-based wiki system designed to help individuals and teams create their own customized wikis with minimal setup. Whether you're documenting a project, creating a knowledge base, or organizing your notes, MakeAWiki provides an elegant solution with powerful features.
 
 ### Features
 
-- **Easy Package Installation**: Install packages with a single command
-- **Package Management**: Easily update or remove installed packages
-- **Repository Support**: Access a growing collection of Kindle-compatible applications
-- **Dependency Management**: Automatically handles package dependencies
-- **Custom Repository Support**: Add custom repositories for specialized packages
+- **📁 Folder Structure Support**: Organize your content in folders and subfolders
+- **🔍 Search Functionality**: Quickly find content across your wiki
+- **📑 Automatic Table of Contents**: Generated from your markdown headings
+- **🎨 Responsive Design**: Works on desktop and mobile devices
+- **✨ Syntax Highlighting**: Code blocks are beautifully highlighted
+- **🌲 Hierarchical Navigation**: Easily browse through your content structure
 
-### Why Use KPM?
+### Why Use MakeAWiki?
 
-Managing software on Kindle devices can be challenging due to the limited tools available. KPM simplifies this process by providing a standard way to install and manage software, similar to package managers like apt, yum, or brew that you might be familiar with from other systems.
+There are many wiki systems available, but MakeAWiki stands out with its:
 
-KPM makes it easy to:
+- **Simplicity**: Create content using simple Markdown syntax
+- **Flexibility**: Organize your content with a hierarchical folder structure
+- **Modern Interface**: Clean, responsive design that works on all devices
+- **Developer-Friendly**: Easy to extend and customize
+- **Self-Hosted**: You have complete control over your data
 
-1. Discover available software
-2. Install applications without manual downloading and extracting
-3. Keep your applications updated
-4. Remove applications cleanly when they're no longer needed
-5. Share your own software with other Kindle users
+MakeAWiki makes it easy to:
+
+1. Create and organize documentation
+2. Build knowledge bases for teams or communities
+3. Document projects with clear structure
+4. Share information in a user-friendly format
+5. Customize the look and feel to match your needs
 
 ### System Requirements
 
-- A jailbroken Kindle device
-- KTerm (Terminal emulator for Kindle)
-- Basic network connectivity
-- Approximately 2MB of storage space for KPM itself
+- Node.js (v12 or higher)
+- npm or yarn
+- Basic web server (for production deployment)
+- Minimal disk space (less than 50MB for the core system)
 
-Get started with KPM by following our [Installation Guide](/installation).
+Get started with MakeAWiki by following our [Installation Guide](/installation).

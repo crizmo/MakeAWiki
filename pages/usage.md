@@ -1,100 +1,108 @@
 ## Basic Usage
 
-KPM provides a simple set of commands to manage packages on your Kindle. Here are the basic commands to get you started:
+MakeAWiki is designed to be easy to use while providing powerful features for organizing and sharing your knowledge. Here's how to use it effectively:
 
-### Querying Available Packages
+### Creating Content
 
-To see what packages are available in the repositories:
+All content in MakeAWiki is created using Markdown files in the `pages` directory. The folder structure in the `pages` directory directly maps to the URL structure of your wiki.
 
-```bash
-kpm -Qr
+#### File Structure Example
+
+```
+pages/
+  home.md                   # Accessible at /
+  getting-started.md        # Accessible at /getting-started
+  tutorials/                # Directory
+    beginner.md             # Accessible at /tutorials/beginner
+    advanced.md             # Accessible at /tutorials/advanced
+  reference/                # Directory
+    api.md                  # Accessible at /reference/api
 ```
 
-To check if a specific package is available:
+### Markdown Features
 
-```bash
-kpm -Qr package-name
+MakeAWiki supports standard Markdown syntax plus some additional features:
+
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+
+**Bold text** and *italic text*
+
+[Link to another page](/page-name)
+
+![Image alt text](/static/images/example.jpg)
+
+- Bullet point
+- Another point
+  - Nested point
+
+1. Numbered item
+2. Another numbered item
+
+> Blockquote example
 ```
 
-For example:
+### Code Syntax Highlighting
 
-```bash
-kpm -Qr kwordle
+MakeAWiki supports syntax highlighting for many programming languages:
+
+```javascript
+function sayHello() {
+  console.log("Hello, MakeAWiki!");
+}
 ```
 
-### Installing Packages
+### Tables
 
-To install a package:
-
-```bash
-kpm -S package-name
+```markdown
+| Header 1 | Header 2 |
+|----------|----------|
+| Cell 1   | Cell 2   |
+| Cell 3   | Cell 4   |
 ```
 
-For example, to install KindleFetch:
+### Customizing Your Wiki
 
-```bash
-kpm -S kindlefetch
-```
+You can customize your MakeAWiki instance by:
 
-Note: KPM currently supports installing one package at a time.
+1. Modifying the CSS files in the `static` directory
+2. Updating the templates in the `views` directory
+3. Adding your own static assets (images, fonts, etc.) to the `static` directory
 
-### Listing Installed Packages
+### Navigation
 
-To see what packages are installed on your device:
+MakeAWiki automatically generates navigation based on your folder structure. The sidebar shows all your pages organized by directory.
 
-```bash
-kpm -Ql
-```
+### Search
 
-To check if a specific package is installed:
-
-```bash
-kpm -Ql package-name
-```
-
-### Updating KPM 
-
-To update KPM itself to the latest version:
-
-```bash
-kpm -S kpm
-```
-
-### Removing Packages
-
-To remove an installed package:
-
-```bash
-kpm -R package-name
-```
+You can use the search bar at the top of each page to find content across your wiki. The search is case-insensitive and works across all pages.
 
 ### Getting Help
 
-For basic help with KPM commands:
+If you need help with MakeAWiki, check out these resources:
 
-```bash
-kpm
-```
+- [Support Page](/support) - Common issues and solutions
+- [Customization Guide](/customization) - Detailed customization options
+- [GitHub Issues](https://github.com/yourusername/MakeAWiki/issues) - Report bugs or request features
 
-For help with a specific operation (S, R, Q):
+### Keyboard Shortcuts
 
-```bash
-kpm -S
-kpm -R
-kpm -Q
-```
+MakeAWiki includes several keyboard shortcuts to enhance your experience:
 
-### Command Summary
-
-| Command | Description |
+| Shortcut | Description |
 |---------|-------------|
-| `kpm -S package` | Install a package |
-| `kpm -R package` | Remove a package |
-| `kpm -Ql` | List all installed packages |
-| `kpm -Ql package` | Check if a package is installed |
-| `kpm -Qr` | List all available packages |
-| `kpm -Qr package` | Check if a package is available |
-| `kpm remove [package]` | Remove packages |
-| `kpm help` | Show help information |
+| `Ctrl + K` or `/` | Focus the search bar |
+| `Esc` | Clear search or close dialogs |
+| `Alt + →` | Navigate forward in history |
+| `Alt + ←` | Navigate back in history |
 
-For more advanced usage, check out our [Advanced Features](/advanced) guide.
+### Working with Images
+
+To add images to your wiki:
+
+1. Place your image files in the `static/images` directory
+2. Reference them in your markdown: `![Alt text](/static/images/your-image.jpg)`
+
+For more advanced usage, check out our [Advanced Configuration](/guides/advanced-configuration) guide.

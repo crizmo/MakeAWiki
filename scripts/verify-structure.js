@@ -24,8 +24,7 @@ console.log(`Node environment: ${process.env.NODE_ENV || 'development'}`);
 // Check and create directories if they don't exist
 const requiredDirs = [
   path.join(baseDir, 'pages'),
-  path.join(baseDir, 'pages/packages'),
-  path.join(baseDir, 'pages/tutorials'),
+  path.join(baseDir, 'pages/guides'),
   path.join(baseDir, 'views'),
   path.join(baseDir, 'static'),
 ];
@@ -44,7 +43,7 @@ requiredDirs.forEach(dir => {
 const homeMdPath = path.join(baseDir, 'pages', 'home.md');
 if (!fs.existsSync(homeMdPath)) {
   console.log(`Creating basic home.md at ${homeMdPath}`);
-  fs.writeFileSync(homeMdPath, `# Welcome to KPMWiki\n\nThis is the official documentation for KPM - the Kindle Package Manager.\n\n## Getting Started\n\nMore content will be generated soon.`);
+  fs.writeFileSync(homeMdPath, `# Welcome to MakeAWiki\n\nCreate your own customized wiki with MakeAWiki - a flexible markdown-based wiki system.\n\n## Getting Started\n\nMore content will be generated soon.`);
 }
 
 // Create a basic error.md file if it doesn't exist
@@ -63,7 +62,7 @@ if (!fs.existsSync(pageEjsPath)) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %> | KPM Wiki</title>
+  <title><%= title %> | Make A Wiki</title>
   <link rel="stylesheet" href="/static/base.css">
 </head>
 <body>

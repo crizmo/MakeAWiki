@@ -1,5 +1,5 @@
 /**
- * Mobile interaction enhancements for KPMWiki
+ * Mobile interaction enhancements for MakeAWiki
  */
 document.addEventListener('DOMContentLoaded', () => {
   // Enhance table of contents on mobile

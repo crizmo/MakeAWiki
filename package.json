@@ -1,7 +1,7 @@
 {
-  "name": "kpmwiki",
+  "name": "makeawiki",
   "version": "1.0.0",
-  "description": "Markdown-based wiki system with folder support",
+  "description": "Create your own markdown-based wiki system with folder support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

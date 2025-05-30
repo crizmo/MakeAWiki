@@ -2,7 +2,7 @@
 
 # This script sets up the deployment environment and tests the update scripts locally
 
-echo "Setting up deployment environment for KPMWiki..."
+echo "Setting up deployment environment for MakeAWiki..."
 
 # Verify Node.js is installed
 if ! command -v node &> /dev/null; then
@@ -21,15 +21,12 @@ echo "Installing dependencies..."
 npm install
 
 # Create necessary directories if they don't exist
-mkdir -p pages/packages
+mkdir -p pages/guides
 
 # Test the update scripts
 echo "Testing update scripts..."
-echo "Updating package information from https://github.com/gingrspacecadet/kpm/..."
-node scripts/update-packages.js
-
-echo "Updating contributors information..."
-node scripts/update-contributors.js
+echo "Verifying project structure..."
+node scripts/verify-structure.js
 
 echo "Setup complete!"
 echo "To deploy to Vercel, follow the instructions in DEPLOYMENT.md"

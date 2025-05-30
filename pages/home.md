@@ -1,44 +1,39 @@
-# Welcome to KPM Wiki
+# Welcome to MakeAWiki
 
-Welcome to the official documentation for KPM - the Package Manager for Kindle.
+Welcome to MakeAWiki - Create your own customized wiki with ease!
 
-## What is KPM?
-KPM (Kindle Package Manager) is a lightweight tool that makes it easy to install and manage software packages on jailbroken Kindle devices. Inspired by package managers like pacman, it simplifies the process of finding, installing, and managing applications and utilities for your Kindle.
+## What is MakeAWiki?
+MakeAWiki is a flexible markdown-based wiki system that allows anyone to create their own customized wiki. Built with Node.js, Express, and EJS templates, it provides a clean, responsive user interface with powerful features to organize and share your knowledge.
 
 ## Key Features
-* Simple command-line interface
-* Repository-based package system
-* Easy installation and removal of packages
-* Support for package dependencies
-* Low resource footprint suitable for Kindle devices
+* 📁 **Folder Structure Support**: Organize your content in folders and subfolders
+* 🔍 **Search Functionality**: Quickly find content across your wiki
+* 📑 **Automatic Table of Contents**: Generated from your markdown headings
+* 🎨 **Responsive Design**: Works on desktop and mobile devices
+* ✨ **Syntax Highlighting**: Code blocks are beautifully highlighted
+* 🌲 **Hierarchical Navigation**: Easily browse through your content structure
 
 ## Getting Started
 * [Installation Guide](/installation)
 * [Basic Usage](/usage)
 
-## Packages
-* [Available Packages](/packages)
-* [blockamazon](/packages/blockamazon) - Block Amazon services on your Kindle
-* [gnomegames](/packages/gnomegames) - Classic GNOME games for Kindle
-* [hello](/packages/hello) - Simple example package
-* [hyprpad](/packages/hyprpad) - Text editor for Kindle
-* [kanki](/packages/kanki) - Flashcard app for language learning
-* [kindlefetch](/packages/kindlefetch) - System information display
-* [kwordle](/packages/kwordle) - Wordle game for Kindle
+## Documentation
+* [Introduction](/introduction)
+* [Customization](/customization)
+* [Contributing](/contributing)
 
-## Tutorials
-* [Installing Packages](/tutorials/installing-packages)
-* [Creating Your Own Packages](/tutorials/creating-packages)
+## Guides
+* [Markdown Basics](/guides/markdown-basics)
+* [Organizing Content](/guides/organizing-content)
 
-## Community
-* [How to Contribute](/contributing)
-* [Our Contributors](/contributors)
+## Support
 * [Getting Support](/support)
 
 ## Quick Installation
 
 ```bash
-wget https://raw.githubusercontent.com/gingrspacecadet/kpm/main/install-kpm.sh
-chmod +x install-kpm.sh
-./install-kpm.sh
+git clone https://github.com/yourusername/MakeAWiki.git
+cd MakeAWiki
+npm install
+npm start
 ```

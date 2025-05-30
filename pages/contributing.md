@@ -1,39 +1,37 @@
-## Contributing to KPM
+## Contributing to MakeAWiki
 
-We welcome contributions to KPM! This page outlines how you can help make KPM even better.
+We welcome contributions to MakeAWiki! This page outlines how you can help make MakeAWiki even better.
 
 ### Ways to Contribute
 
-There are many ways to contribute to KPM:
+There are many ways to contribute to MakeAWiki:
 
-1. **Code Contributions**: Help improve the KPM codebase
+1. **Code Contributions**: Help improve the MakeAWiki codebase
 2. **Documentation**: Help improve or translate the documentation
-3. **Package Creation**: Create and maintain packages
+3. **Theme Creation**: Create and share custom themes
 4. **Bug Reports**: Report issues you encounter
 5. **Feature Requests**: Suggest new features or improvements
 6. **Community Support**: Help other users in the forums or chat
 
 ### Development Setup
 
-To set up a development environment for KPM:
+To set up a development environment for MakeAWiki:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gingrspacecadet/kpm.git
-   cd kpm
+   git clone https://github.com/yourusername/MakeAWiki.git
+   cd MakeAWiki
    ```
 
-2. KPM is written in C and uses standard libraries. You'll need:
-   - GCC or Clang compiler
-   - Make
-   - Basic development tools
-
-3. Build KPM:
+2. Install dependencies:
    ```bash
-   make
+   npm install
    ```
 
-This will build the `kpm` binary that you can test locally.
+3. Run the development server:
+   ```bash
+   npm start
+   ```
 
 ### Pull Request Workflow
 
@@ -43,30 +41,24 @@ This will build the `kpm` binary that you can test locally.
 4. Push your branch to your fork
 5. Create a pull request from your branch to the main repository
 
-### Contributing New Packages
+### Contributing Features
 
-To add a new package to KPM:
+To add a new feature to MakeAWiki:
 
-1. Create a new directory in the `packages` folder with your package name
+1. Decide what type of feature you want to add
    ```bash
-   mkdir -p packages/my-package
+   # Example: Adding a new theme
+   mkdir -p static/themes/my-theme
    ```
 
-2. Create the necessary files:
-   - `install.sh`: Installation script
-   - `uninstall.sh`: Uninstallation script
-   - Any other files needed by your package
+2. Create the necessary files for your feature
+   - CSS files for themes
+   - JavaScript for new functionality
+   - EJS template modifications if needed
 
-3. Make sure your scripts are executable:
+3. Document your changes in the appropriate guide:
    ```bash
-   chmod +x packages/my-package/install.sh packages/my-package/uninstall.sh
-   ```
-
-4. Add your package name to `packages.conf`
-
-5. Create documentation for your package in the wiki:
-   ```bash
-   touch wiki/pages/packages/my-package.md
+   touch pages/guides/my-feature-guide.md
    ```
 
 6. Submit a pull request with your changes
@@ -81,19 +73,19 @@ To add a new package to KPM:
 
 ### Documentation Contributions
 
-The KPM documentation is written in Markdown and stored in the `docs` directory. To contribute:
+The MakeAWiki documentation is written in Markdown and stored in the `pages` directory. To contribute:
 
 1. Edit the appropriate Markdown files
-2. Preview your changes locally using a Markdown previewer
+2. Preview your changes by running the MakeAWiki server locally
 3. Submit a pull request with your changes
 
-### Creating and Maintaining Packages
+### Creating and Maintaining Themes
 
-If you're interested in creating or maintaining packages:
+If you're interested in creating or maintaining themes:
 
-1. Follow the [Creating Packages](/tutorials/creating-packages) guide
-2. Test your packages thoroughly
-3. Submit them to the official KPM repository or host your own
+1. Follow the [Custom Themes](/tutorials/custom-themes) guide
+2. Test your themes thoroughly across different devices
+3. Submit them to the official MakeAWiki repository or share them with the community
 
 ### Community Guidelines
 

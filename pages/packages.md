@@ -1,102 +1,91 @@
-# Available KPM Packages
+# MakeAWiki Guides
 
-KPM provides access to a variety of useful packages for your Kindle. This page lists the currently available packages that can be installed with KPM.
+This page provides links to various guides that will help you get the most out of your MakeAWiki instance.
 
-## How to Install Packages
+## Beginner Guides
 
-To install any of these packages, use the following command on your Kindle:
+### Setting Up Your Wiki
 
-```bash
-kpm -S packagename
-```
+Follow these guides to get your wiki up and running:
 
-For example, to install KindleFetch:
+- [Installation Guide](/installation) - How to install MakeAWiki
+- [Basic Usage](/usage) - How to create and organize content
 
-```bash
-kpm -S kindlefetch
-```
+### Creating Content
 
-## Available Packages
+Learn how to create effective wiki content:
 
-### blockamazon
-A utility to block Amazon services on your Kindle, providing more privacy.
+- [Markdown Basics](/guides/markdown-basics) - Essential markdown syntax for your wiki
+- [Organizing Content](/guides/organizing-content) - Best practices for wiki structure
 
-**Installation:**
-```bash
-kpm -S blockamazon
-```
+## Advanced Guides
 
-### gnomegames
-A collection of classic GNOME games ported to Kindle.
+### Customization
 
-**Installation:**
-```bash
-kpm -S gnomegames
-```
+Customize your wiki to fit your needs:
 
-### hello
-A simple "Hello World" example package that demonstrates KPM's functionality.
+- [Customizing Appearance](/customization) - Change the look and feel of your wiki
 
-**Installation:**
-```bash
-kpm -S hello
-```
+### Deployment
 
-### hyprpad
-A simple text editor for Kindle devices.
+Learn how to deploy your wiki to production:
 
-**Installation:**
-```bash
-kpm -S hyprpad
-```
+- [Deploying to Vercel](/guides/deploying-to-vercel) - Easy, free hosting with Vercel
+- [Self-hosting](/guides/self-hosting) - Host on your own server
 
-### kanki
-A flashcard application for learning Japanese and other languages.
+### Deployment Options
 
-**Installation:**
-```bash
-kpm -S kanki
-```
+MakeAWiki can be deployed in various ways depending on your needs:
 
-### kindlefetch
-A system information tool similar to neofetch, showing information about your Kindle device.
+#### Static Site Generation
+Generate a static version of your wiki for hosting on platforms like GitHub Pages or Netlify.
 
-**Installation:**
-```bash
-kpm -S kindlefetch
-```
+#### Node.js Server
+Run MakeAWiki as a Node.js application on your own server or a cloud provider.
 
-### kwordle
-A Wordle game clone for Kindle.
+#### Docker Container
+Package MakeAWiki in a container for easy deployment and scalability.
 
-**Installation:**
-```bash
-kpm -S kwordle
-```
+### Performance Optimization
 
-## Managing Installed Packages
+Learn how to optimize your wiki for better performance:
 
-To list all installed packages:
-```bash
-kpm -Ql
-```
+- Configure caching for faster page loads
+- Optimize images and assets
+- Implement lazy loading for media
 
-To check if a specific package is installed:
-```bash
-kpm -Ql packagename
-```
+## Security Considerations
 
-To remove a package:
-```bash
-kpm -R packagename
-```
+When hosting your wiki, consider these security aspects:
 
-To check if a package is available in the repositories:
-```bash
-kpm -Qr packagename
-```
+### Authentication
 
-To list all available packages in the repositories:
-```bash
-kpm -Qr
-```
+Different ways to secure your wiki:
+
+- Basic HTTP authentication
+- OAuth integration
+- Custom user management
+
+### Data Protection
+
+Best practices for protecting your wiki content:
+
+- Regular backups
+- Content versioning
+- Data encryption
+
+## Troubleshooting
+
+Common issues and their solutions:
+
+- Page rendering problems
+- Search functionality issues
+- Navigation structure errors
+
+## Community Resources
+
+Learn from and connect with other MakeAWiki users:
+
+- Join the MakeAWiki GitHub discussions
+- Share your customizations and themes
+- Contribute to the project's development

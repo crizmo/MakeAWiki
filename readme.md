@@ -1,6 +1,6 @@
-# KPMWiki - Wiki Creator with Folder Support
+# MakeAWiki - Create Your Own Wiki with Folder Support
 
-KPMWiki is a flexible markdown-based wiki system built with Node.js, Express, and EJS templates. It provides a clean, responsive user interface with folder structure support, search functionality, and automatic table of contents generation.
+MakeAWiki is a flexible markdown-based wiki system built with Node.js, Express, and EJS templates. It allows anyone to create their own customized wiki with a clean, responsive user interface, folder structure support, search functionality, and automatic table of contents generation.
 
 ## Features
 
@@ -22,8 +22,8 @@ KPMWiki is a flexible markdown-based wiki system built with Node.js, Express, an
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/KPMWiki.git
-cd KPMWiki
+git clone https://github.com/yourusername/MakeAWiki.git
+cd MakeAWiki
 ```
 
 2. Install dependencies:
@@ -68,8 +68,7 @@ This project is configured with automated deployment via GitHub Actions and Verc
 The wiki is configured with GitHub Actions workflows that:
 
 1. Automatically deploy to Vercel when changes are pushed to the main branch
-2. Daily fetch the latest package information from the KPM repository (https://github.com/gingrspacecadet/kpm)
-3. Update the contributors list based on GitHub contributions
+2. Verify the project structure to ensure all necessary directories exist
 
 To test the update scripts locally:
 
@@ -83,17 +82,14 @@ chmod +x setup-deployment.sh
 
 ### Manual Updates
 
-You can also manually update the package information and contributors:
+You can also manually verify the project structure:
 
 ```bash
-# Update package information
-npm run update-packages
+# Make the setup script executable
+chmod +x setup-deployment.sh
 
-# Update contributors information
-npm run update-contributors
-
-# Update both
-npm run update-all
+# Run the setup script
+./setup-deployment.sh
 ```
 
 ## License
