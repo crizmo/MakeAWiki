@@ -145,3 +145,22 @@
     top: 90px;
   }
 }
+
+/* Attribution link styling */
+.attribution {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #495057;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #adb5bd;
+  transition: color 0.2s ease;
+}
+
+.attribution a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}

@@ -95,3 +95,7 @@ chmod +x setup-deployment.sh
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+[<img src="https://img.shields.io/badge/Made_with-MakeAWiki-blue?style=flat-square">](https://make-a-wiki.vercel.app/)
