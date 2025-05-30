@@ -1,4 +1,4 @@
-# MakeAWiki - Create Your Own Wiki
+# MakeAWiki - Simple, Powerful Wiki Creation
 
 MakeAWiki is a flexible markdown-based wiki system built with Node.js, Express, and EJS templates. It allows anyone to create their own customized wiki with a clean, responsive user interface, folder structure support, search functionality, and automatic table of contents generation.
 
